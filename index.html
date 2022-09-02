@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   </head>
+<body>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+ <div class="container">
+    <form action="" name="form" onsubmit="guessNumber()">
+      <div class="text">
+        <h1>I am Thinking of a Number Between 1-5.</h1>
+      <h1>Can You Guess It</h1>
+      </div>
+      <input type="text" name="number" class="number" placeholder="Guessing Number">
+      <input type="submit" value="Guess" class="btn btn-dark d-block m-auto mt-4 input_text">
+    </form>
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ 
+ <script>
+
+  var randomNumber = Math.floor(Math.random() * 5);
+
+
+  
+
+  function guessNumber() {
+    
+    var value = form.number.value;
+
+    if (randomNumber == value ) {
+      
+
+      alert('Congratulation !!!! The Game');
+      
+    }else if (randomNumber === value ){
+      alert('Not a Number ');
+    }
+    else{
+
+   alert('Loss !!!! The Game');
+      
+    }
+
+
+
+
+  }
+
+
+
+ </script>
+
+
+</body>
+</html>
+
